@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTC Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to PTC Lab</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Experiments</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Interactive Science Experiments</h2>
+            <p>Explore physics, technology, and chemistry experiments with real-time simulations!</p>
+        </section>
+
+        <section id="experiments">
+            <h2>Experiments</h2>
+            <div class="experiment" id="pendulum">
+                <h3>Pendulum Experiment</h3>
+                <canvas id="pendulumCanvas"></canvas>
+                <button onclick="startPendulum()">Start Pendulum</button>
+            </div>
+
+            <div class="experiment" id="ohmsLaw">
+                <h3>Ohm's Law Simulation</h3>
+                <label for="voltage">Voltage (V):</label>
+                <input type="number" id="voltage" value="5">
+                <label for="resistance">Resistance (Ω):</label>
+                <input type="number" id="resistance" value="10">
+                <button onclick="calculateCurrent()">Calculate Current</button>
+                <p id="currentDisplay">Current (I): 0 A</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 PTC Lab. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
